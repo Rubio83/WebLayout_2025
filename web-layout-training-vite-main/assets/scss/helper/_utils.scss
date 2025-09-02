@@ -22,6 +22,10 @@
     .d-md-none{
         display: none;
     }
+
+    .d-md-flex{
+        display: flex;
+    }
 }
 
 @media (max-width: 576px) 
@@ -86,7 +90,12 @@
 .col-5 {
     padding-left: 12px;
     padding-right: 12px;
-    width: calc(100% / 12 * 5); /*4格*/
+    width: calc(100% / 12 * 5); /*5格*/
+}
+.col-6 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 6); /*6格*/
 }
 .col-7 {
     padding-left: 12px;
@@ -142,7 +151,31 @@
         padding-right: 6px;
         width: 100%; 
     }
+
+    .flex-md-column {
+        flex-direction: column; /*改成直式排列*/
+    }
+
+    .flex-md-nowrap {
+        flex-wrap: nowrap; /*不換行*/
+    }
+
+    .gap-md-4  {
+        gap: 4px; /*間距*/
+    }
+
+    .gap-md-8 {
+        gap: 8px; /*間距*/
+    }
+
+
 }
+
+@media(max-width: 767px)  {
+    .overflow-x-md-auto {
+        overflow-x: auto;
+    }
+}  
 
 .row {
     display: flex; /*使用flexbox*/
@@ -151,8 +184,14 @@
     margin-right: -12px; /*負值抵消col的padding-right*/
 }
 
-.display-2{
+.display-2 {
     font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.display-1 {
+    font-size: 64px;
     line-height: 1.2;
     font-weight: 700;
 }
@@ -190,6 +229,9 @@
 @media (max-width: 767px) 
 {
     /*767 命名 md*/
+    .h2-md{
+        font-size: 32px;
+    }
     .h3-md{
         font-size: 28px;
     }
@@ -202,6 +244,12 @@
     .h6-md{
         font-size: 16px;
     }
+
+    .display-md-2 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+}
    
 }
 
@@ -288,6 +336,11 @@
 .py-12{
     padding-top: 12px;  
     padding-bottom: 12px;
+}
+
+.py-48{
+    padding-top: 48px;  
+    padding-bottom: 48px;
 }
 
 .p-32 {
@@ -502,6 +555,10 @@
 
 .text-danger {
     color: $danger-300;
+}
+
+.text-white {
+    color: $neutral-0;
 }
 
 
